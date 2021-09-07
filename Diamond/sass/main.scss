@@ -1,0 +1,72 @@
+@import 'files/fonts';
+@import 'files/colors';
+@import 'files/mixins.scss';
+
+
+
+
+
+
+
+
+.main-title{
+    @include fontAll(48px, 500, 'CG' )
+}
+
+.header {
+  &-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-nav ul{
+    list-style: none;
+    margin: 5px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+   display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+h5{
+  display: inline-block
+}
+.header-location-info{
+ float: right;
+ margin-left: 10px;
+ 
+}
+.diamonds1{
+  height: 500px;
+  background-image: url('../images/image3.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  position: relative;
+  &-text{
+    position: absolute;
+    font-family:'CG';
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 72.66px;
+    margin-left: 310px;
+    margin-top: 103px;
+    letter-spacing: 2px;
+    
+
+  }
+  &-text-second{
+    position: absolute;
+    font-family:'CG';
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 55.71px;
+    margin-left: 310px;
+    margin-top: 166px;
+    letter-spacing: 2px;
+   
+
+  }
+
+}

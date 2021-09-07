@@ -1,0 +1,68 @@
+
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+    
+ a{
+    text-decoration:none !important ;
+    color: $black-col;
+    &:hover{
+        text-decoration: none;
+        color: $black-col;
+    }
+  }
+  textarea,
+  textarea:hover,
+  textarea:focus,
+  input,
+  input:hover,
+  input:focus,
+  select:hover,
+  select:focus{
+      outline:none;
+  }
+
+%transition {
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+  }
+
+  
+@mixin fontAll($size, $weight, $family) {
+    // font-size: $size;
+    // font-weight: $weight;
+    // font-family: $family;
+    font: {
+      size: $size;
+      weight: $weight;
+      family: $family;
+    }
+  }
+  .btn-purp {
+    padding: 15px 40px;
+    background: linear-gradient(265.97deg, #b777be -9.18%, #88488f 103.05%);
+    @include fontAll(12px, 700, 'Montserrat');
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid $main-col;
+    @extend %transition;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      color: #fff;
+      background: linear-gradient(265.97deg, #b777be -30%, #88488f 80%);
+    }
+    svg {
+      margin-left: 15px;
+    }
+    &:focus {
+      outline: none;
+    }
+  }

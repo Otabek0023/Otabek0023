@@ -1,0 +1,59 @@
+%transition {
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+  }
+  
+    *{a{
+      text-decoration:none !important ;
+      color: black;
+    }}
+  
+  
+  @mixin fontAll($size, $weight, $family) {
+    // font-size: $size;
+    // font-weight: $weight;
+    // font-family: $family;
+    font: {
+      size: $size;
+      weight: $weight;
+      family: $family;
+    }
+  }
+  
+  .btn-purp {
+    padding: 15px 40px;
+    background: linear-gradient(265.97deg, #b777be -9.18%, #88488f 103.05%);
+    @include fontAll(12px, 700, 'Montserrat');
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid $main-col;
+    @extend %transition;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      color: #fff;
+      background: linear-gradient(265.97deg, #b777be -30%, #88488f 80%);
+    }
+    svg {
+      margin-left: 15px;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .container{
+      width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-right: auto;
+      margin-left: auto;
+  }
+  .main-title{
+      @include fontAll(48px, 500, 'CG' )
+  }
